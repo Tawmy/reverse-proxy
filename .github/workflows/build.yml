@@ -64,7 +64,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
         with:
-          tag_name: ${{ steps.caddy_version.outputs.CADDY_VERSION }}
+          tag_name: v${{ steps.caddy_version.outputs.CADDY_VERSION }}
           name: ${{ steps.caddy_version.outputs.CADDY_VERSION }}
           draft: false
           prerelease: false

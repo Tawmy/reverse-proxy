@@ -1,5 +1,5 @@
 # Set the Caddy base image version once and reuse it for both builder and final images
-ARG CADDY_VERSION=2.11.1
+ARG CADDY_VERSION=2.11.2
 
 FROM caddy:${CADDY_VERSION}-builder AS builder
 
